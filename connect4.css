@@ -8,6 +8,13 @@ body {
   margin: 0 auto;
   background-color: antiquewhite;
   height: 100svh;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
 }
 
 #board td {
@@ -43,12 +50,25 @@ body {
   background-color: gold;
 }
 
+input {
+  border: 0;
+  padding: 10px 4px;
+  margin: 4px;
+  background: #fff;
+  font-size: 1rem;
+  border-radius: 0;
+  outline: 0;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+}
+
+
 button {
 box-sizing: border-box;
 border: none;
 border-radius: 4px;
 padding: 0 16px;
-margin-bottom: 8px;
+margin: 8px 0px;
 min-width: 16px;
 height: 30px;
 text-align: center;
@@ -58,14 +78,11 @@ color: #F7F7F2;
 background-color: #70D9A5;
 box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
   0 1px 5px 0 rgba(0, 0, 0, 0.12);
-
 font-size: 1rem;
 overflow: hidden;
 outline: none;
 cursor: pointer;
 transition: all .1s ease-in-out;
-
-
 }
 
 button:hover {
